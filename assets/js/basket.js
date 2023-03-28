@@ -187,7 +187,6 @@ const createStyle = () => {
     cursor: pointer;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; 
 }
-
 .basket__btn:hover {
     background-color: #fff;
     color: #2d8df3;
@@ -265,3 +264,5 @@ export const createBasket = (count, productArr) => {
     createStyle();
     return basketItems;
 };
+
+
