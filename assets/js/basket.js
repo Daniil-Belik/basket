@@ -145,7 +145,7 @@ const createStyle = () => {
     position: relative;
 }
 .basket__container {
-    background-color: rgb(150, 200, 241);
+    background-color: rgb(150, 200, 260);
     position: absolute;
     padding: 10px;
     bottom:0;
