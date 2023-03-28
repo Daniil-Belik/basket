@@ -180,18 +180,19 @@ const createStyle = () => {
     background-color: #2d8df3;
     border: none;
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-    border-radius: 2
-    0px;
+    border-radius: 30px;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out; 
 }
+
 .basket__btn:hover {
     background-color: #fff;
     color: #2d8df3;
     border: 2px solid #2d8df3;
+    padding-bottom: 5px;
 }
 .basket__item-container {
     display: flex;
@@ -199,6 +200,7 @@ const createStyle = () => {
     align-items: center;
     border-bottom: 2px solid #ccc;
     margin-bottom: 10px;
+    gap: 10px;
 }
 .basket__item-img {
     width: 80px;
@@ -234,11 +236,14 @@ const createStyle = () => {
     border-radius: 3px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    border: 1px solid #f00;
 }
 .basket__item-del:hover {
     background-color: #fff;
     color: #f00;
     border: 1px solid #f00;
+    text-aling: center;
+    font-size: 14px;
 }
 `
     createElement({
