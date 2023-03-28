@@ -157,33 +157,90 @@ const createStyle = () => {
 }
 .basket__container p {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
 }
 .basket__total {
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
 }
 .basket__btn-container {
     display: flex;
+    justify-content: center;
+    margin-top: 20px;
     gap: 10px;
+}
+.basket__btn {
+    display: inline-block;
+    background-color: #2d8df3;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 2
+    0px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.basket__btn:hover {
+    background-color: #fff;
+    color: #2d8df3;
+    border: 2px solid #2d8df3;
 }
 .basket__item-container {
     display: flex;
-    gap: 10px;
-    justify-content: space-evenly;
-    border-bottom: 1px solid lightblue;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+.basket__item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.basket__item-info {
+    flex-grow: 1;
+}
+.basket__item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.basket__item-price {
+    font-size: 16px;
+    color: #333;
+}
+.basket__item-qty {
+    font-size: 16px;
+    color: #333;
 }
 .basket__item-del {
-    display: block;
-    background-color: #007bff;
-    border: 1px solid #041c36;
-    padding: 5px 3px 0 3px;
+    display: inline-block;
+    background-color: #f00;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
     cursor: pointer;
-    font-size: 10px;
-    border-radius: 2px;
-}`;
-
+    transition: all 0.2s ease-in-out;
+}
+.basket__item-del:hover {
+    background-color: #fff;
+    color: #f00;
+    border: 1px solid #f00;
+}
+`
     createElement({
         type: 'style',
         attrs: { innerText: css },
